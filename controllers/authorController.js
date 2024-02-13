@@ -6,7 +6,7 @@ const registerAuthor = async (req, res) => {
   if (!author_id || !author_name || !author_email || !author_password) {
     return res.status(401).json({
       success: false,
-      message: "No complete data provided",
+      message: "No complete data is provided ",
     });
   }
   const newAuthor = {
